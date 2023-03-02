@@ -1,0 +1,39 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Sl.no</th>
+      <th scope="col">Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone number</th>
+      <th scope="col">Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let info of userinfo;let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{info.name}}</td>
+      <td>{{info.username}}</td>
+      <td>{{info.email}}</td>
+      <td>
+        <ul>
+          <li>city : {{info.address.city}}</li>
+          <li>Geo(lat-lng) : {{info.address.geo.lat}} {{info.address.geo.lng}}</li>
+          <li>Street : {{info.address.street}}</li>
+          <li>Suite : {{info.address.suite}}</li>
+          <li>Zipcode : {{info.address.zipcode}}</li>
+        </ul>
+      </td>
+      <td>{{info.phone}}</td>
+      <td>
+        <ul>
+          <li>{{info.company.name}}</li>
+          <li>{{info.company.catchPhrase}}</li>
+          <li>{{info.company.bs}}</li>
+        </ul>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
