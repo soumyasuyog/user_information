@@ -5,6 +5,6 @@ Installation Steps.
 
 *Install node_modules (command - npm install)
 
-*Start compilation (command - ng serve)
+*Run the angular app (command - ng serve)
 
 *Open browser and run (localhost:4200)
